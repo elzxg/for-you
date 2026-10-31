@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mali', cursive;
+  background: linear-gradient(
+    135deg,
+    #fff0f5,
+    #f0eaff,
+    #fff1e6,
+    #fce4ec
+  );
+  color: #bd7895;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+header {
+  padding: 45px 15px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: clamp(25px, 5vw, 42px);
+  color: #e78eae;
+  text-shadow: 2px 3px white;
+}
+
+header p {
+  margin-top: 10px;
+  color: #b98da7;
+}
+
+.decor {
+  font-size: 35px;
+  margin: 15px;
+}
+
+.container {
+  width: 92%;
+  max-width: 750px;
+  margin: 15px auto 50px;
+  padding: 35px 20px;
+  border-radius: 40px;
+  background: rgba(255,255,255,.8);
+  border: 3px dashed #f4c5d8;
+  box-shadow: 0 15px 45px #e7b9d755;
+  position: relative;
+  z-index: 1;
+}
+
+.characters {
+  font-size: 65px;
+  margin: 15px;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-10px); }
+}
+
+.envelope {
+  width: 230px;
+  height: 155px;
+  background: #ffe5ec;
+  margin: 25px auto;
+  border-radius: 15px;
+  border: 3px solid #f5bdcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  box-shadow: 0 8px 20px #e8b8cc77;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.04); }
+}
+
+button {
+  font-family: 'Mali', cursive;
+  border: 2px solid white;
+  background: #f5b5cc;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px #eabbd077;
+  transition: .3s;
+  margin: 8px;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.04);
+  background: #e99dbb;
+}
+
+.secondary {
+  background: #eee1f8;
+  color: #a987b5;
+}
+
+#letter {
+  display: none;
+  margin-top: 30px;
+  animation: show .8s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  background: #fff9fc;
+  border: 2px dashed #edc5d8;
+  border-radius: 30px;
+  padding: 30px 15px;
+  margin-top: 20px;
+  line-height: 2.2;
+}
+
+.message h2 {
+  color: #e78eae;
+  margin-bottom: 15px;
+}
+
+.question {
+  background: #ffeaf2;
+  border-radius: 30px;
+  padding: 18px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #d982a4;
+}
+
+#answer {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #df83a7;
+  font-weight: bold;
+}
+
+.floating {
+  position: fixed;
+  bottom: -40px;
+  z-index: 0;
+  animation: floatUp linear forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 20px;
+  color: #c99bb2;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>For you ♡</h1>
+  <p>วันนี้วันอะไรน้ะ...</p>
+  <div class="decor">୨୧ ♡ ✿ ♡ ୨୧</div>
+</header>
+
+<main class="container">
+
+  <div class="characters">🐰 💌 🧸</div>
+
+  <h2>จดหมายฉบับพิเศษ</h2>
+
+  <div class="envelope">💌</div>
+
+  <button onclick="openLetter()">
+    💌 กดเพื่อเปิดจดหมาย ♡
+  </button>
+
+  <section id="letter">
+
+    <div class="message">
+
+      <h2>Happy birthday na ka ♥️♥️</h2>
+
+      <p>
+        วันนี้เป็นวันที่พิเศษมาก ๆ เลย คนเก่งโตขึ้นอีกปีแล้วนะ <br>
+        เค้าขอให้วันเกิดปีนี้เป็นการเริ่มต้นใหม่ที่ดี มีแต่สิ่งดี ๆ เข้ามาในชีวิตนะคะขอบคุณนะคะที่เติบโตมาอย่างดี พี่เป็นคนที่เข้มแข็งมาก ๆ เลย เค้าภูมิใจในตัวพี่มาก ๆ เลย เก่งมากเลยนะ รู้ไหมคะ ^^ <br>
+        วันเกิดปีนี้เค้าขอให้พี่มีความสุขเยอะ ๆ สุขภาพร่างกายแข็งแรงนะคะ ไม่ว่าจะเป็นเรื่องอะไรก็ตามเค้ารอยินดีกับความสำเร็จของพี่นะ พี่เป็นคนเก่งของเค้าเสมอเลย
+
+ ทุกอย่างที่เป็นพี่ ไม่ว่าพี่จะชอบอะไร ชอบแต่งตัวแบบไหน เค้ารักพี่ในแบบที่พี่เป็น พี่มีค่าสำหรับเค้ามาก<br>
+        ขอบคุณที่เกิดมาให้รักนะคะ ♡
+      </p>
+
+      <div class="decor">
+        🌷 🧸 🌸 🐰 🌷
+      </div>
+
+      <div class="question">
+        วันนี้คนเก่งยิ้มหรือยังคะ ♡
+      </div>
+
+      <button onclick="sayYes()">
+        ♡ ยิ้มแล้วว ♡
+      </button>
+
+      <button class="secondary" onclick="sayNo()">
+        🥺 ขอคิดก่อน
+      </button>
+
+      <div id="answer"></div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Made with love ♡ Just for you
+</footer>
+
+<script>
+function openLetter() {
+  document.getElementById("letter").style.display = "block";
+}
+
+function sayYes() {
+  document.getElementById("answer").innerHTML =
+    " น่ารักที่สุดเลยค่ะคนเก่ง <br>ขอกอดทีสิ้";
+}
+
+function sayNo() {
+  document.getElementById("answer").innerHTML =
+    " แหนะ คนสวยแกล้งกันเหรอคะ ";
+}
+
+const hearts = ["♡", "💗", "💕", "🌸", "✨", "🎀"];
+
+function createHeart() {
+  const heart = document.createElement("div");
+
+  heart.className = "floating";
+  heart.innerHTML =
+    hearts[Math.floor(Math.random() * hearts.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize =
+    (15 + Math.random() * 25) + "px";
+
+  heart.style.animationDuration =
+    (5 + Math.random() * 5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
